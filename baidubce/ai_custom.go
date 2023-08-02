@@ -99,6 +99,33 @@ func (cli Client) ChatEbInstant(
 	return &res.ChatResponse, err
 }
 
+// Chat 所有流
+func (cli Client) ChatStream(
+	ctx context.Context, in *ai_customv1.ChatCompletionsRequest, model string,
+) (ai_customv1.WenxinworkshopService_ChatCompletionsStreamClient, error) {
+	in.Stream = true
+	m := "completions"
+	if model == "ERNIE-Bot-turbo" {
+		m = "eb-instant"
+	}
+	if model == "Embedding-V1" {
+		m = "embedding-v1"
+	}
+	resp, err := cli.client.R().
+		DisableAutoReadResponse().
+		SetBody(in).
+		Post("/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/" + m)
+
+	if resp.StatusCode != 200 {
+		body, err := io.ReadAll(resp.Body)
+		if err != nil {
+			return nil, err
+		}
+		return nil, errors.New(string(body))
+	}
+	return internal.NewStreamReader[*ai_customv1.ChatResponse](resp.Body), err
+}
+
 // Balance
 func (cli Client) Balance(
 	ctx context.Context, in *ai_customv1.BalanceRequest, opts ...grpc.CallOption,
