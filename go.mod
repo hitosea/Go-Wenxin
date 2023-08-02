@@ -1,4 +1,4 @@
-module github.com/hitoseago-wenxin
+module github.com/hitosea/go-wenxin
 
 go 1.20
 

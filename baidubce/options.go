@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	baidubcev1 "github.com/hitoseago-wenxin/gen/go/baidubce/v1"
+	baidubcev1 "github.com/hitosea/go-wenxin/gen/go/baidubce/v1"
 )
 
 type Option func(*Client) error

@@ -1,6 +1,6 @@
 
 <p align='center'>
-    <img src='https://github.com/hitoseago-wenxin/assets/50035229/84af1dfe-43c2-456b-85ce-52e787e034cb' alt='' width='1300'/>
+    <img src='https://github.com/hitosea/go-wenxin/assets/50035229/84af1dfe-43c2-456b-85ce-52e787e034cb' alt='' width='1300'/>
 </p>
 
 
@@ -35,9 +35,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/hitoseago-wenxin/baidubce"
-	ai_customv1 "github.com/hitoseago-wenxin/gen/go/baidubce/ai_custom/v1"
-	baidubcev1 "github.com/hitoseago-wenxin/gen/go/baidubce/v1"
+	"github.com/hitosea/go-wenxin/baidubce"
+	ai_customv1 "github.com/hitosea/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	baidubcev1 "github.com/hitosea/go-wenxin/gen/go/baidubce/v1"
 )
 
 //init client
@@ -78,9 +78,9 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/hitoseago-wenxin/baidubce"
-	ai_customv1 "github.com/hitoseago-wenxin/gen/go/baidubce/ai_custom/v1"
-	baidubcev1 "github.com/hitoseago-wenxin/gen/go/baidubce/v1"
+	"github.com/hitosea/go-wenxin/baidubce"
+	ai_customv1 "github.com/hitosea/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	baidubcev1 "github.com/hitosea/go-wenxin/gen/go/baidubce/v1"
 )
 
 //init client
@@ -120,9 +120,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/hitoseago-wenxin/baidubce"
-	ai_customv1 "github.com/hitoseago-wenxin/gen/go/baidubce/ai_custom/v1"
-	baidubcev1 "github.com/hitoseago-wenxin/gen/go/baidubce/v1"
+	"github.com/hitosea/go-wenxin/baidubce"
+	ai_customv1 "github.com/hitosea/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	baidubcev1 "github.com/hitosea/go-wenxin/gen/go/baidubce/v1"
 	"io"
 )
 
@@ -176,9 +176,9 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/hitoseago-wenxin/baidubce"
-	ai_customv1 "github.com/hitoseago-wenxin/gen/go/baidubce/ai_custom/v1"
-	baidubcev1 "github.com/hitoseago-wenxin/gen/go/baidubce/v1"
+	"github.com/hitosea/go-wenxin/baidubce"
+	ai_customv1 "github.com/hitosea/go-wenxin/gen/go/baidubce/ai_custom/v1"
+	baidubcev1 "github.com/hitosea/go-wenxin/gen/go/baidubce/v1"
 	"io"
 )
 
