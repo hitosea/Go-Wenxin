@@ -5,9 +5,9 @@ import (
 	"errors"
 	"io"
 
-	ai_customv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/ai_custom/v1"
-	commonv1 "github.com/ConnectAI-E/go-wenxin/gen/go/baidubce/common/v1"
-	"github.com/ConnectAI-E/go-wenxin/internal"
+	ai_customv1 "github.com/hitoseago-wenxin/gen/go/baidubce/ai_custom/v1"
+	commonv1 "github.com/hitoseago-wenxin/gen/go/baidubce/common/v1"
+	"github.com/hitoseago-wenxin/internal"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

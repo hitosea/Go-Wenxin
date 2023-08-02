@@ -1,4 +1,4 @@
-module github.com/ConnectAI-E/go-wenxin
+module github.com/hitoseago-wenxin
 
 go 1.20
 
