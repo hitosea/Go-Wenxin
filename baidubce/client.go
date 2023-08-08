@@ -6,6 +6,7 @@ import (
 	"io"
 	"log"
 	"os"
+	"time"
 
 	baidubcev1 "github.com/hitosea/go-wenxin/gen/go/baidubce/v1"
 	"github.com/imroc/req/v3"
@@ -22,7 +23,7 @@ type Client struct {
 func New(opts ...Option) (*Client, error) {
 	cli := &Client{
 		client: req.C().
-			SetBaseURL(baidubceBaseUrl),
+			SetBaseURL(baidubceBaseUrl).SetTimeout(30 * time.Second),
 	}
 
 	cli.client.
@@ -63,6 +64,10 @@ func (cli *Client) Token(ctx context.Context, in *baidubcev1.TokenRequest) (*bai
 		SetQueryParam("client_secret", in.ClientSecret).
 		SetSuccessResult(res).
 		Post("/oauth/2.0/token")
+
+	if err != nil {
+		return nil, err
+	}
 
 	if resp.StatusCode != 200 {
 		body, err := io.ReadAll(resp.Body)
